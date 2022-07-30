@@ -436,7 +436,7 @@ class classifier:
                 param_grid = {"max_depth":np.linspace(3, 30, 6,dtype="int"),
                     "max_features": ['auto', 'sqrt','log2'],
                     "min_samples_split" : [2, 5, 10, 15,30,50,100],
-                    "min_samples_leaf":[2,3,4,5,6,10],
+                    "min_samples_leaf":[2,3,4,5,6,10,20],
                     "criterion": ["gini", "entropy"]
                         }
             rsv=RandomizedSearchCV(estimator=DecisionTreeClassifier(random_state=self.random_state), 
